@@ -9,6 +9,6 @@ export class AppComponent {
     public message: string = 'Hallo';
 
     onTap() {
-        this.message = 'Bonsoir';
+        this.message = 'HI';
     }
 }

@@ -1,3 +1,6 @@
 <StackLayout orientation="vertical">
-    <Label [text]="message" (tap)="onTap()"></Label>
+    <Label [text]="message" ></Label>
+    <Label [text]="message" ></Label>
+    <Button text="Im am a Buuton" (tap)="onTap()" class="-primary"></Button>
+    <TextField [(ngModel)]="message"></TextField> <!--two ways data binding-->
 </StackLayout>
