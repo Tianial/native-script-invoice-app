@@ -1,6 +1,13 @@
 <StackLayout orientation="vertical">
-    <Label [text]="message" ></Label>
-    <Label [text]="message" ></Label>
-    <Button text="Im am a Buuton" (tap)="onTap()" class="-primary"></Button>
-    <TextField [(ngModel)]="message"></TextField> <!--two ways data binding-->
+    <Label class="title" text="TALKAPP"></Label>
+    <Label class="subtitle" text="Messages"></Label>
+
+    <Label class="name" text="Tiani"></Label> <Label class="date-time-picker" text="18.08.2020"></Label>
+    <Button text="Tiani" (tap)="onTap()"></Button>
+
+    <TextField text="{{variable}}" hint="Enter text..."></TextField>
+
+
+    <Button text="press here to send" class="-outline -rounded-lg"></Button>
+
 </StackLayout>
