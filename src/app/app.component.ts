@@ -6,9 +6,9 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
 
-    public activeChallenges: Array<string> = [];
+    public message: string = 'Hallo';
 
-    public handleEvent(text: string): void {
-        this.activeChallenges.push(text);
+    onTap() {
+        this.message = 'Bonsoir';
     }
 }
