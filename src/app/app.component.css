@@ -1,20 +1,32 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .title {
-  font-size: 50px;
+    font-size: 50px;
     text-align: center;
-    text-decoration: underline;
-    color: aquamarine;
+    font-weight: bold;
 }
+
 .subtitle {
-  font-size: 20px;
-  color: coral;
+    font-size: 20px;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-.date-time-picker{
-  text-align: right;
-  color: black;
+
+.date-time-picker {
+    text-align: right;
+    color: black;
 }
-.name{
-  color: black;
+
+.name {
+    color: black;
 }
-.-outline -rounded-lg{
-  color: coral;
+
+.-outline -rounded-lg {
+    color: blue;
+    font-weight: bold;
 }

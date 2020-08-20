@@ -14,4 +14,19 @@ import { AppModule } from "./app/app.module";
 // A NativeScript Angular app needs to make both paradigms work together,
 // so we provide a wrapper platform object, platformNativeScriptDynamic,
 // that sets up a NativeScript application and can bootstrap the Angular framework.
+
+import { on as applicationOn, launchEvent, suspendEvent, resumeEvent, exitEvent, lowMemoryEvent, uncaughtErrorEvent, ApplicationEventData } from "tns-core-modules/application";
+
+applicationOn(launchEvent, (args: ApplicationEventData) => {
+    if (args.android) {
+        // For Android applications, args.android is an android.content.Intent class.
+        console.log("Launched Android application with the following intent: " + args.android + ".");
+    } else if (args.ios !== undefined) {
+        // For iOS applications, args.ios is NSDictionary (launchOptions).
+        console.log("Launched iOS application with options: " + args.ios);
+    }
+});
+
 platformNativeScriptDynamic().bootstrapModule(AppModule);
+
+

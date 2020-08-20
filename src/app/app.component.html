@@ -1,13 +1,5 @@
-<StackLayout orientation="vertical">
-    <Label class="title" text="TALKAPP"></Label>
-    <Label class="subtitle" text="Messages"></Label>
-
-    <Label class="name" text="Tiani"></Label> <Label class="date-time-picker" text="18.08.2020"></Label>
-    <Button text="Tiani" (tap)="onTap()"></Button>
-
-    <TextField text="{{variable}}" hint="Enter text..."></TextField>
-
-
-    <Button text="press here to send" class="-outline -rounded-lg"></Button>
-
+<StackLayout orientation="vertical" class="container">
+    <!--Presents the HTML (XML template) of the component that is matching the current path-->
+    <page-router-outlet></page-router-outlet>
 </StackLayout>
+
