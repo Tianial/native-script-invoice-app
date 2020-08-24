@@ -1,0 +1,20 @@
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.photo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.last-message {
+    font-size: 14px;
+}

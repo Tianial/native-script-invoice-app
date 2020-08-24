@@ -1,0 +1,19 @@
+<StackLayout orientation="vertical" class="container">
+    <Label text="Chats" class="title"></Label>
+
+    <ListView class="list-group" [items]="chatList">
+        <ng-template let-chat="item" let-idx="index">
+                <FlexboxLayout
+                        flexDirection="row"
+                        class="list-group-item"
+                        [nsRouterLink]="['/chat-detail', idx]"
+                >
+                    <Image src="{{chat.photoUrl}}" class="photo"></Image>
+                    <Label text="{{ chat.firstname + ' (' + idx + ')'  }}" class="list-group-item-heading last-message" verticalAlignment="center" style="width: 70%"></Label>
+                </FlexboxLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>
+
+
+

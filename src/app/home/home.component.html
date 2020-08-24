@@ -1,0 +1,21 @@
+<StackLayout orientation="vertical" class="container">
+    <Label class="title" text="Invoice App"></Label>
+    <Label class="subtitle" text="Choose one of the following menus"></Label>
+
+    <Button
+            text="Chats"
+            class="-outline -rounded-lg"
+            [nsRouterLink]="['/chat-list']">
+    </Button>
+    <Button text="Business Info" class="-outline -rounded-lg"></Button>
+
+
+<AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
+    <Label text="10, 10" left="10" top="10" width="90" height="90" backgroundColor="red"></Label>
+    <Label text="110, 10" left="110" top="10" width="90" height="90" backgroundColor="green"></Label>
+    <Label text="110, 110" left="110" top="110" width="90" height="90" backgroundColor="blue"></Label>
+    <Label text="10, 110" left="10" top="110" width="90" height="90" backgroundColor="yellow"></Label>
+</AbsoluteLayout>
+
+
+</StackLayout>

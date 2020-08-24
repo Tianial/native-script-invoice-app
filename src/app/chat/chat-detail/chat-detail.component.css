@@ -1,0 +1,16 @@
+/* Add mobile styles for the component here.  */
+.bottom-container {
+    width: 100%;
+}
+
+.text-field {
+    width: 80%;
+}
+
+.send-button {
+    width: 20%;
+}
+
+.activity-indicator {
+    height: 100px;
+}

@@ -1,0 +1,19 @@
+<StackLayout orientation="horizontal" backgroundColor="lightgray">
+    <ActionBar title="{{selectedChat.firstname}}" class="action-bar" verticalAlignment="top">
+    </ActionBar>
+
+    <ActivityIndicator
+            busy="{{true}}"
+            class="activity-indicator"
+            verticalAlignment="center"
+            horizontalAlignment="center"
+    >
+    </ActivityIndicator>
+
+    <FlexboxLayout flexDirection="row" verticalAlignment="bottom" class="bottom-container">
+        <TextField hint="Enter text..." class="text-field">
+        </TextField>
+        <Button text="Send" class="send-button">
+        </Button>
+    </FlexboxLayout>
+</StackLayout>
