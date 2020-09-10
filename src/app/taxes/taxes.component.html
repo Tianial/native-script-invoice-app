@@ -1,0 +1,31 @@
+<StackLayout orientation="vertical" class="set">
+    <ActionBar title="Taxes" class="action-bar" verticalAlignment="top">
+    </ActionBar>
+
+
+    <FlexboxLayout flexDirection="row"
+                   class="header">
+        <Label text="Name" class="list-group-item-heading" verticalAlignment="center" width="70%"></Label>
+        <Label text="Rate" class="list-group-item-heading" verticalAlignment="center" width="70%"></Label>
+    </FlexboxLayout>
+
+    <ListView class="list-group" [items]="nameList">
+        <ng-template let-tax='item' let-i="index" let-odd="odd" let-even="even">
+            <FlexboxLayout flexDirection="row"
+                           class="list-group-item"
+                           [nsRouterLink]="['/', tax.route]">
+                <Label text="{{tax.name}}" class="list-group-item-heading" verticalAlignment="center" width="70%"></Label>
+                <Label text="{{tax.rate}}" class="list-group-item-heading" verticalAlignment="center" width="70%"></Label>
+            </FlexboxLayout>
+        </ng-template>
+
+    </ListView>
+
+</StackLayout>
+
+
+
+
+
+
+
