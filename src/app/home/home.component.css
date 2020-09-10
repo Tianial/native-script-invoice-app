@@ -1,6 +1,7 @@
 .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -11,7 +12,7 @@
 
 .subtitle {
     font-size: 20px;
-    color: darkslategray;
+    color: red;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -26,7 +27,36 @@
     color: black;
 }
 
-.-outline -rounded-lg {
-    color: blue;
+.menu-btn {
+    border-radius: 20px;
+    color: #fff;
+    font-size: 30px;
     font-weight: bold;
+    height: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#incoming-invoice {
+    background: linear-gradient(to right, rgb(131, 164, 212), rgb(182, 251, 255));
+}
+
+#outgoing-invoice {
+    background: linear-gradient(to right, orange, #f8d28b);
+}
+
+#business-info {
+    background: linear-gradient(to right, blue, #a6a6f8);
+}
+
+#customer-info {
+    background: linear-gradient(to right, deeppink, #f5a1ce);
+}
+
+#chat {
+    background: linear-gradient(to right, green, #a9f3a9);
+}
+
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
 }

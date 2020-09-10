@@ -1,21 +1,51 @@
-<StackLayout orientation="vertical" class="container">
-    <Label class="title" text="Invoice App"></Label>
-    <Label class="subtitle" text="Choose one of the following menus"></Label>
+<ActionBar title="Invoice App"></ActionBar>
 
-    <Button
-            text="Chats"
-            class="-outline -rounded-lg"
+<Scrollview>
+<StackLayout orientation="vertical" class="container">
+
+    <Button text="Incoming Invoice"
+            id="incoming-invoice"
+            class="menu-btn"
+            [nsRsouterLink]="['/incominginvoice-detail']">
+    </Button>
+
+    <Button text="Outgoing Invoice"
+            class="menu-btn"
+            id="outgoing-invoice"
+            [nsRouterLink]="['/outgoinginvoice-detail']">
+    </Button>
+
+    <Button text="Business Info"
+            class="menu-btn"
+            id="business-info"
+            [nsRouterLink]="['/businessinfo-detail']">
+    </Button>
+
+    <Button text="Customer Info"
+            class="menu-btn"
+            id="customer-info"
+            [nsRouterLink]="['/customerinfo-detail']">
+    </Button>
+
+    <Button text="Chats"
+            class="menu-btn"
+            id="chat"
             [nsRouterLink]="['/chat-list']">
     </Button>
-    <Button text="Business Info" class="-outline -rounded-lg"></Button>
+
+    <!---<Button text="Tabs"
+           class="-outline -rounded-lg"
+           [nsRouterLink]="['/tab-list']"></Button> --->
 
 
-<AbsoluteLayout width="210" height="210" backgroundColor="lightgray">
-    <Label text="10, 10" left="10" top="10" width="90" height="90" backgroundColor="red"></Label>
-    <Label text="110, 10" left="110" top="10" width="90" height="90" backgroundColor="green"></Label>
-    <Label text="110, 110" left="110" top="110" width="90" height="90" backgroundColor="blue"></Label>
-    <Label text="10, 110" left="10" top="110" width="90" height="90" backgroundColor="yellow"></Label>
-</AbsoluteLayout>
+<!--<AbsoluteLayout width="210" height="210" backgroundColor="lightgray">-->
+<!--    <Label text="10, 10" left="10" top="10" width="90" height="90" backgroundColor="red"></Label>-->
+<!--    <Label text="110, 10" left="110" top="10" width="90" height="90" backgroundColor="green"></Label>-->
+<!--    <Label text="110, 110" left="110" top="110" width="90" height="90" backgroundColor="blue"></Label>-->
+<!--    <Label text="10, 110" left="10" top="110" width="90" height="90" backgroundColor="yellow"></Label>-->
+<!--</AbsoluteLayout>-->
 
 
 </StackLayout>
+
+</Scrollview>
