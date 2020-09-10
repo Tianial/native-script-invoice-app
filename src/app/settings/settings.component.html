@@ -1,0 +1,16 @@
+<StackLayout orientation="vertical" class="set">
+
+    <Label class='sets' text="Settings" ></Label>
+
+    <ListView class="list-group" [items]="settingsList">
+        <ng-template let-setting='item' let-i="index" let-odd="odd" let-even="even">
+            <FlexboxLayout flexDirection="row"
+                           class="list-group-item"
+                           [nsRouterLink]="[setting.route]">
+                <Label text="{{ setting.label}}" class="list-group-item-heading" verticalAlignment="center" style="width: 70%"></Label>
+            </FlexboxLayout>
+        </ng-template>
+
+    </ListView>
+
+</StackLayout>

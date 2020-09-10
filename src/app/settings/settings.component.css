@@ -1,0 +1,21 @@
+.set{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sets{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.menu-container Label {
+    font-size: 20px;
+    color: darkslategray;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    border-bottom-width: 3px;
+    border-color: black;
+    width: 100%;
+}

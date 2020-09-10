@@ -1,0 +1,22 @@
+<StackLayout orientation="vertical" class="textbook">
+
+    <Label class='book' text="Report"></Label>
+
+    <StackLayout horizontalAlignment="left" class="menu-container">
+        <Label class="members" text="Number of active members"
+               [nsRouterLink]="['/report-detail']">
+        </Label>
+        <Label class="graph" text="Graphical Representation"
+               [nsRouterLink]="['/report-detail']">
+        </Label>
+        <Label class="posts" text="Recent Posts"
+               [nsRouterLink]="['/report-detail']">
+        </Label>
+        <Label class="comments" text="Most commented Posts"
+               [nsRouterLink]="['/report-detail']">
+        </Label>
+        <Label class="likes" text="Most liked posts"
+               [nsRouterLink]="['/report-detail']">
+        </Label>
+    </StackLayout>
+</StackLayout>

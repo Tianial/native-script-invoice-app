@@ -1,0 +1,12 @@
+<TabView selectedIndex="0" (selectedIndexChanged)="onSelectedIndexchanged($event)" androidTabsPosition="bottom">
+    <StackLayout *tabItem="{title: 'Home'}">
+        <ns-home></ns-home>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Report'}">
+       <ns-report></ns-report>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Settings'}">
+        <ns-settings></ns-settings>
+    </StackLayout>
+</TabView>
+
