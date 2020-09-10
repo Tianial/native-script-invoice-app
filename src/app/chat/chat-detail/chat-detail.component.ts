@@ -23,7 +23,7 @@ export class ChatDetailComponent implements OnInit {
             {firstname: 'Alice', lastMessage: 'Et ?', photoUrl: 'https://picsum.photos/id/237/200/300'},
             {firstname: 'Rosine', lastMessage: 'Hallo', photoUrl: 'https://picsum.photos/id/237/200/300'},
             {firstname: 'Balla', lastMessage: 'Hmmmm', photoUrl: 'https://picsum.photos/id/237/200/300'},
-            {firstname: 'Ezrav', lastMessage: 'Okay😡', photoUrl: 'https://picsum.photos/id/237/200/300'}
+            {firstname: 'Ezra', lastMessage: 'Okay😡', photoUrl: 'https://picsum.photos/id/237/200/300'}
         ];
 
         console.log(this.route.snapshot.params)

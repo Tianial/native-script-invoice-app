@@ -8,7 +8,7 @@ import {Chat} from "../interfaces/Chat";
 })
 export class ChatListComponent implements OnInit {
 
-    public chatList: Chat[];
+    public chatList: Array<Chat>;  // or chat[]//
 
     constructor() {
     }

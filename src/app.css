@@ -39,3 +39,10 @@ The following CSS rule changes the font size of all Buttons that have the
     font-size: 20;
     padding: 8 4;
   }
+
+.activity-indicator {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -10,6 +10,19 @@ import {ChatListComponent} from './chat/chat-list/chat-list.component';
 import {ChatDetailComponent} from './chat/chat-detail/chat-detail.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { HomeComponent } from './home/home.component';
+import { TabsListComponent } from './tabs-list/tabs-list.component';
+import { ReportComponent } from './report/report.component';
+import { SettingsComponent } from './settings/settings.component';
+import { SettingsDetailComponent } from './settings-detail/settings-detail.component';
+import { ReportDetailComponent } from './report-detail/report-detail.component';
+import { UserComponent } from './user/user.component';
+import { TaxesComponent } from './taxes/taxes.component';
+import { ItemsComponent } from './items/items.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { BusinessinfoDetailComponent } from './businessinfo-detail/businessinfo-detail.component';
+import { CustomerinfoDetailComponent } from './customerinfo-detail/customerinfo-detail.component';
+import { IncominginvoiceDetailComponent } from './incominginvoice-detail/incominginvoice-detail.component';
+import { OutgoinginvoiceDetailComponent } from './outgoinginvoice-detail/outgoinginvoice-detail.component';
 
 @NgModule({
     bootstrap: [
@@ -26,6 +39,19 @@ import { HomeComponent } from './home/home.component';
         ChatListComponent,
         ChatDetailComponent,
         HomeComponent,
+        TabsListComponent,
+        ReportComponent,
+        SettingsComponent,
+        SettingsDetailComponent,
+        ReportDetailComponent,
+        UserComponent,
+        TaxesComponent,
+        ItemsComponent,
+        ChangePasswordComponent,
+        BusinessinfoDetailComponent,
+        CustomerinfoDetailComponent,
+        IncominginvoiceDetailComponent,
+        OutgoinginvoiceDetailComponent,
         /*
         StackComponent,
         FlexboxComponent,
