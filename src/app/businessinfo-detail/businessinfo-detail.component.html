@@ -1,0 +1,78 @@
+<ActionBar title="Business Infos" class="action-bar" verticalAlignment="top">
+</ActionBar>
+
+<ActivityIndicator
+        busy="{{isBusy}}"
+        class="activity-indicator"
+        color="red" width="100" height="100"
+>
+</ActivityIndicator>
+
+<ScrollView *ngIf="!isBusy" orientation="vertical">
+
+    <StackLayout>
+        <StackLayout orientation="vertical">
+            <Label text="Firstname" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="firstName"
+                    hint="Enter firstname..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <Label text="Lastname" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="lastName"
+                    hint="Enter lastname..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <Label text="Name of Company" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="NameOfCompany"
+                    hint="Enter Name of Company..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <FlexboxLayout justifyContent="space-between">
+            <Label text="Is Sarl?" horizontalAlignment="left" class="input"></Label>
+            <Switch [(ngModel)]="isSarl" checked="true"></Switch>
+        </FlexboxLayout>
+
+        <StackLayout orientation="vertical">
+            <label text="Date of birth" horizontalAlignment="left" class="input"></label>
+
+            <DatePicker
+                    minDate="1970-01-01"
+                    maxDate="2100-12-31"
+                    [(ngModel)]="selectedDate"
+            >
+            </DatePicker>
+        </StackLayout>
+
+        <ScrollView orientation="horizontal">
+            <GridLayout class="m-15"
+                        columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+
+            </GridLayout>
+        </ScrollView>
+
+
+        <Button
+                (tap)="save()"
+                text="Save"
+                class="-outline -rounded-lg">
+        </Button>
+    </StackLayout>
+</ScrollView>
+
+
+
+
