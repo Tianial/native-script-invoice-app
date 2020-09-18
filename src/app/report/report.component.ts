@@ -1,4 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+
+
+interface Report{
+  router:string;
+  labeling:string;
+}
 
 @Component({
   selector: 'ns-report',
@@ -7,9 +14,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReportComponent implements OnInit {
 
-  constructor() { }
+   public reportList: Report[];
 
-  ngOnInit(): void {
+  constructor(private router: ActivatedRoute) {
+
+  }
+
+
+    ngOnInit(): void {
+
+      this.reportList=[
+          {labeling:'Number of active members', router: '/report-detail'},
+          {labeling:'Most commented Comments',router: '/report-detail'},
+          {labeling:'Most liked Comments',router: '/report-detail'},
+          {labeling:'New posts',router: '/report-detail'}
+
+
+      ];
+
+      console.log(this.router.snapshot.params)
   }
 
 }

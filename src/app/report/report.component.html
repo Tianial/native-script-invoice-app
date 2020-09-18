@@ -1,22 +1,20 @@
+<ActionBar title="Report" class="action-bar" verticalAlignment="top">
+</ActionBar>
+
+
 <StackLayout orientation="vertical" class="textbook">
 
-    <Label class='book' text="Report"></Label>
+        <ListView class="list-group" [items]="reportList">
+            <ng-template let-report='item' let-i="index" let-odd="odd" let-even="even">
+                <FlexboxLayout flexDirection="row"
+                               class="list-group-item"
+                               [nsRouterLink]="[report.router]">
+                    <Label text="{{ report.labeling}}" class="list-group-item-heading" verticalAlignment="center" style="width: 70%"></Label>
+                </FlexboxLayout>
+            </ng-template>
 
-    <StackLayout horizontalAlignment="left" class="menu-container">
-        <Label class="members" text="Number of active members"
-               [nsRouterLink]="['/report-detail']">
-        </Label>
-        <Label class="graph" text="Graphical Representation"
-               [nsRouterLink]="['/report-detail']">
-        </Label>
-        <Label class="posts" text="Recent Posts"
-               [nsRouterLink]="['/report-detail']">
-        </Label>
-        <Label class="comments" text="Most commented Posts"
-               [nsRouterLink]="['/report-detail']">
-        </Label>
-        <Label class="likes" text="Most liked posts"
-               [nsRouterLink]="['/report-detail']">
-        </Label>
-    </StackLayout>
+        </ListView>
+
 </StackLayout>
+
+

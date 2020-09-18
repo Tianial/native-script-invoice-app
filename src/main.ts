@@ -28,3 +28,7 @@ applicationOn(launchEvent, (args: ApplicationEventData) => {
 });
 
 platformNativeScriptDynamic().bootstrapModule(AppModule);
+
+
+
+

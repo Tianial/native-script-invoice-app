@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute} from "@angular/router";  // pour recuperer lindex
 import {Chat} from "../interfaces/Chat";
 
 @Component({

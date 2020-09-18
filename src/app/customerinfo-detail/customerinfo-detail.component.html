@@ -1,1 +1,99 @@
-<Button text="customerinfo-detail works!" class="btn btn-primary"></Button>
+<ActionBar title="Customer Infos" class="action-bar" verticalAlignment="top">
+</ActionBar>
+
+<ActivityIndicator
+        busy="{{isBusy}}"
+        class="activity-indicator"
+        color="red" width="100" height="100"
+>
+</ActivityIndicator>
+
+<ScrollView *ngIf="!isBusy" orientation="vertical">
+
+    <StackLayout>
+        <StackLayout orientation="vertical">
+            <Label text="Firstname" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="firstName"
+                    hint="Enter firstname..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <Label text="Lastname" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="lastName"
+                    hint="Enter lastname..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <Label text="Place of birth" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="placeOfbirth"
+                    hint="Enter Place of birth..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <label text="Date of birth" horizontalAlignment="left" class="input"></label>
+
+            <DatePicker
+                    minDate="1970-01-01"
+                    maxDate="2100-12-31"
+                    [(ngModel)]="dateofbirth"
+            >
+            </DatePicker>
+        </StackLayout>
+
+
+        <StackLayout orientation="vertical">
+            <Label text="Origin" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="origin"
+                    hint="Enter Origin..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <StackLayout orientation="vertical">
+            <Label text="Email Adress" horizontalAlignment="left" class="input"></Label>
+            <TextField
+                    [(ngModel)]="emailadress"
+                    hint="Enter Email Adress..."
+                    autocorrect="false"
+                    backgroundColor="lightyellow"
+            ></TextField>
+        </StackLayout>
+
+        <FlexboxLayout justifyContent="space-between">
+            <Label text="Are you married?" horizontalAlignment="left" class="input"></Label>
+            <Switch [(ngModel)]="married" checked="true"></Switch>
+        </FlexboxLayout>
+
+
+        <ScrollView orientation="horizontal">
+            <GridLayout class="m-15"
+                        columns="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+
+            </GridLayout>
+        </ScrollView>
+
+
+        <Button
+                (tap)="next()"
+                text="Next"
+                class="-outline -rounded-lg">
+        </Button>
+    </StackLayout>
+</ScrollView>
+
+
+

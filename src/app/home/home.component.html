@@ -1,12 +1,13 @@
 <ActionBar title="Invoice App"></ActionBar>
 
 <Scrollview>
+
 <StackLayout orientation="vertical" class="container">
 
     <Button text="Incoming Invoice"
             id="incoming-invoice"
             class="menu-btn"
-            [nsRsouterLink]="['/incominginvoice-detail']">
+            [nsRouterLink]="['/incominginvoice-detail']">
     </Button>
 
     <Button text="Outgoing Invoice"
@@ -15,17 +16,19 @@
             [nsRouterLink]="['/outgoinginvoice-detail']">
     </Button>
 
+    <Button text="Customer Info"
+            class="menu-btn"
+            id="customer-info"
+            [nsRouterLink]="['/customerinfo-detail']">
+    </Button>
+
+
     <Button text="Business Info"
             class="menu-btn"
             id="business-info"
             [nsRouterLink]="['/businessinfo-detail']">
     </Button>
 
-    <Button text="Customer Info"
-            class="menu-btn"
-            id="customer-info"
-            [nsRouterLink]="['/customerinfo-detail']">
-    </Button>
 
     <Button text="Chats"
             class="menu-btn"

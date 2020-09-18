@@ -22,6 +22,7 @@ export class SettingsComponent implements OnInit {
 
   ngOnInit(): void {
       this.settingsList= [
+          {label:'Create Account', route: '/create-account'},
           {label:'Change Password', route: '/change-password'},
           {label:'Users', route: '/user'},
           {label:'Taxes', route: '/taxes'},

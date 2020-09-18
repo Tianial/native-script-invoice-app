@@ -1,12 +1,10 @@
-<TabView selectedIndex="0" (selectedIndexChanged)="onSelectedIndexchanged($event)" androidTabsPosition="bottom">
-    <StackLayout *tabItem="{title: 'Home'}">
-        <ns-home></ns-home>
-    </StackLayout>
-    <StackLayout *tabItem="{title: 'Report'}">
-       <ns-report></ns-report>
-    </StackLayout>
-    <StackLayout *tabItem="{title: 'Settings'}">
-        <ns-settings></ns-settings>
-    </StackLayout>
-</TabView>
+<TabView (selectedIndexChanged)="onSelectedIndexchanged($event)" androidTabsPosition="bottom">
+    <page-router-outlet *tabItem="{title: 'Home'}" name="homeTab">
+    </page-router-outlet>
 
+    <page-router-outlet *tabItem="{title: 'Report'}" name="reportTab">
+    </page-router-outlet>
+
+    <page-router-outlet *tabItem="{title: 'Settings'}" name="settingsTab">
+    </page-router-outlet>
+</TabView>

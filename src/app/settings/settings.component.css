@@ -4,16 +4,16 @@
 }
 
 .sets{
-    font-size: 20px;
+    font-size: 50px;
     text-align: center;
     font-weight: bold;
 }
 
 .menu-container Label {
-    font-size: 20px;
+    font-size: 50px;
     color: darkslategray;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 
     border-bottom-width: 3px;
     border-color: black;
