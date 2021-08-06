@@ -10,8 +10,7 @@ import {ChatDetailComponent} from "../chat/chat-detail/chat-detail.component";
 import {HomeComponent} from "./home.component";
 
 const routes: Routes = [
-    {path: '', redirectTo: "/home"},
-    {path: 'home', component: HomeComponent},
+
 
     {path: "businessinfo-detail", component: BusinessinfoDetailComponent},
     {path: "customerinfo-detail", component: CustomerinfoDetailComponent},
@@ -19,7 +18,10 @@ const routes: Routes = [
     {path: "outgoinginvoice-detail", component: OutgoinginvoiceDetailComponent},
 
     {path: 'chat-list', component: ChatListComponent},
-    {path: 'chat-detail/:index', component: ChatDetailComponent}
+    {path: 'chat-detail/:index', component: ChatDetailComponent},
+
+    {path: '', component: HomeComponent}
+
 ];
 
 @NgModule({

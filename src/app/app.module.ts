@@ -8,10 +8,6 @@ import {
 
 import {AppComponent} from "./app.component";
 import {AppRoutingModule} from "./app-routing.module";
-import {ReportComponent} from './report/report.component';
-import {SettingsComponent} from './settings/settings.component';
-import {SettingsDetailComponent} from './settings-detail/settings-detail.component';
-import {ReportDetailComponent} from './report-detail/report-detail.component';
 import {UserComponent} from './user/user.component';
 import {TaxesComponent} from './taxes/taxes.component';
 import {ItemsComponent} from './items/items.component';
@@ -31,10 +27,6 @@ import {ChangePasswordComponent} from './change-password/change-password.compone
     ],
     declarations: [
         AppComponent,
-        ReportComponent,
-        SettingsComponent,
-        SettingsDetailComponent,
-        ReportDetailComponent,
         UserComponent,
         TaxesComponent,
         ItemsComponent,

@@ -7,7 +7,7 @@ import {TabsListComponent} from "./tabs-list.component";
 
 @NgModule({
     declarations: [
-        TabsListComponent
+        TabsListComponent,
     ],
     imports: [
         TabsListRoutingModule,
@@ -17,3 +17,4 @@ import {TabsListComponent} from "./tabs-list.component";
 })
 export class TabsListModule {
 }
+

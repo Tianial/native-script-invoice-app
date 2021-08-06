@@ -7,8 +7,8 @@
         <ListView class="list-group" [items]="reportList">
             <ng-template let-report='item' let-i="index" let-odd="odd" let-even="even">
                 <FlexboxLayout flexDirection="row"
-                               class="list-group-item"
-                               [nsRouterLink]="[report.router]">
+                               class="list-group-item"b
+                               [nsRouterLink]="['report-detail']">
                     <Label text="{{ report.labeling}}" class="list-group-item-heading" verticalAlignment="center" style="width: 70%"></Label>
                 </FlexboxLayout>
             </ng-template>

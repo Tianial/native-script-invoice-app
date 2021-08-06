@@ -15,7 +15,6 @@ import {HomeComponent} from "./home.component";
 @NgModule({
     declarations: [
         HomeComponent,
-
         BusinessinfoDetailComponent,
         CustomerinfoDetailComponent,
         IncominginvoiceDetailComponent,

@@ -17,7 +17,7 @@ import {CreateAccountComponent} from "./create-account/create-account.component"
 const routes: Routes = [
     {
         path: "tab-list",
-        component: TabsListComponent
+        loadChildren: () => import('./tabs-list/tabs-list.module').then(mod => mod.TabsListModule)
     },
     {
         path: 'report-detail',
@@ -34,7 +34,7 @@ const routes: Routes = [
     {path: 'create-account', component: CreateAccountComponent},
     {path: 'taxes', component: TaxesComponent},
     {path: 'items', component: ItemsComponent},
-    { path: "", redirectTo: "tab-list", pathMatch: "full" }
+    { path: "", redirectTo: "/tab-list/default", pathMatch: "full" }
 
 ];
 
@@ -47,3 +47,5 @@ const routes: Routes = [
 })
 export class AppRoutingModule {
 }
+
+

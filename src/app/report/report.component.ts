@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 
 interface Report{
@@ -16,18 +16,20 @@ export class ReportComponent implements OnInit {
 
    public reportList: Report[];
 
-  constructor(private router: ActivatedRoute) {
+  constructor(
+      private router: ActivatedRoute,
+      private r: Router,
+  ) {
 
   }
-
 
     ngOnInit(): void {
 
       this.reportList=[
-          {labeling:'Number of active members', router: '/report-detail'},
-          {labeling:'Most commented Comments',router: '/report-detail'},
-          {labeling:'Most liked Comments',router: '/report-detail'},
-          {labeling:'New posts',router: '/report-detail'}
+          {labeling:'Number of active members', router: 'report-detail'},
+          {labeling:'Most commented Comments',router: 'report-detail'},
+          {labeling:'Most liked Comments',router: 'report-detail'},
+          {labeling:'New posts',router: 'report-detail'}
 
 
       ];
